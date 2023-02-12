@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="customer_report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="512d6dd6-6aa4-4015-b1d8-4a2841888420">
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="85" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="60" width="100" height="20" forecolor="#FFFFFF" uuid="b3d2115c-b0b6-41ea-a195-aaa1f7aecf9e"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial Black" size="13"/>
+				</textElement>
+				<text><![CDATA[DIGIT]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="-20" y="10" width="595" height="75" backcolor="#050505" uuid="6da704ed-4271-49c8-86b1-6ad8ac484e31"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="30" width="100" height="30" forecolor="#FFFFFF" uuid="3812db8d-1c1c-4070-bdf9-fb986a50cbbc"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial Black" size="19"/>
+				</textElement>
+				<text><![CDATA[LUCID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="463" y="50" width="100" height="30" forecolor="#FFFFFF" uuid="0c662380-7bec-43d1-80c8-81d5ed508092"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{Parameter1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="410" y="50" width="50" height="30" forecolor="#FFFFFF" uuid="74aa4a01-d50d-4418-bcea-c7755d69dbaf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Date : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="100" height="30" forecolor="#FFFFFF" uuid="b6ca3d7f-975d-4b4a-8f9e-900227c2c32d"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial Black" size="19"/>
+				</textElement>
+				<text><![CDATA[LUCID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="40" width="270" height="40" forecolor="#FFFFFF" uuid="3a441804-a2f1-4b12-bfb8-bdf57d772a3d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="25"/>
+				</textElement>
+				<text><![CDATA[Customer Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="100" height="20" forecolor="#FFFFFF" uuid="2e5ed5f7-c67f-4fb1-83f4-b999df5989a2"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial Black" size="13"/>
+				</textElement>
+				<text><![CDATA[DIGIT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="4" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="187" height="30" uuid="66a5382b-8739-4ab4-a7bd-d4b6f1e5f914"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="10" width="180" height="30" uuid="685838c5-173c-44d5-a6cf-a4b5bf8671d1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="10" width="180" height="30" uuid="8909817a-32ec-4a22-ac17-ef88c768971e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[Register Date]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="40" width="550" height="1" backcolor="#050505" uuid="506524a1-2937-405d-98e3-670fbc1dd842"/>
+			</rectangle>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="48" splitType="Stretch">
+			<textField>
+				<reportElement x="-2" y="10" width="185" height="30" uuid="4b6c938d-c25d-4d53-9cce-236724886593">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5fc0688d-6ae6-4355-8e7e-5f8109b3d07d"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="183" y="10" width="185" height="30" uuid="dbee5d70-5246-4565-81b2-1d141fe6ac4f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4e7c3572-3457-45a4-9a89-110d1f8243dc"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="368" y="10" width="185" height="30" uuid="cc974a0e-4efc-4ce5-b817-273bf0db6c46">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="81de8259-f498-4431-90b8-926eaadc0212"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

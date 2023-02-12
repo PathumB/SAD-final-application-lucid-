@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sales" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b889d594-47d2-4a92-99ed-01145c560b84">
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<field name="COLUMN_5" class="java.lang.Float"/>
+	<field name="COLUMN_6" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="85" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="10" width="595" height="75" backcolor="#066DD4" uuid="af2f0f80-d938-4161-8928-2fec18d874b1"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="30" forecolor="#FFFFFF" uuid="f2906cff-37ed-4fd8-b667-e10e8340acee"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black" size="19"/>
+				</textElement>
+				<text><![CDATA[LUCID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="30" width="170" height="50" forecolor="#FFFFFF" uuid="74385e4c-d68d-46fb-9546-fe691b0ce54b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="29"/>
+				</textElement>
+				<text><![CDATA[Sales Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="50" width="50" height="30" forecolor="#FFFFFF" uuid="28bfd866-d382-4e6c-8235-f0c05b7e0e1a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Date : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="50" width="100" height="30" forecolor="#FFFFFF" uuid="a92e248e-355b-4a2a-bcec-18b2e9eb9434"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial Black" size="13"/>
+				</textElement>
+				<text><![CDATA[DIGIT]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="470" y="50" width="85" height="30" forecolor="#FFFFFF" uuid="bd1b8233-8731-4a88-bfc0-3e01e49dbb0a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="4" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="59" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="20" width="40" height="30" uuid="ef0e7f64-cb91-4930-a832-74339f543849"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="20" width="70" height="30" uuid="bdcdbf5e-49b2-4e6a-b3d6-9c1990be6c21"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Category]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="20" width="100" height="30" uuid="a70b6751-64e8-4685-90b1-78bb9177ce38"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Product]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="20" width="110" height="30" uuid="4b57d0d5-19a4-4087-8368-4ce887a0c257"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Customer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="20" width="80" height="30" uuid="ccbd0d80-6f3d-4dc1-9185-f46937282089"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="20" width="70" height="30" uuid="5e57e67b-dac2-4b48-a8f4-dd7b19e4c0bc"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Profit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="20" width="85" height="30" uuid="eb510d1d-f2cd-4dfa-8716-748e506e5bf3"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="51" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="10" width="40" height="30" uuid="2fcd840d-83ed-4541-bffd-f493f961c022">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e749f84c-3927-46b5-889d-39f24d5e4587"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="10" width="70" height="30" uuid="f6f2b051-a6c8-4d75-9cc8-ad328bc12749">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1229857f-1223-455d-bace-536d589b72ed"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="10" width="100" height="30" uuid="6b826581-c381-4096-9baf-bc5f5fe4385f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="aca39757-4f09-41ee-96c6-7453f61e26fa"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="10" width="108" height="30" uuid="504da73e-c449-4a5e-80a2-361583839234">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d3216b8d-319e-43b1-9247-037531ec54b3"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="318" y="10" width="82" height="30" uuid="1d46098a-05cc-4a7b-9054-74713d8ca0c7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0ea06113-7850-4afa-8cfd-af478b73bab0"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="10" width="76" height="30" uuid="874cb707-b128-47e3-9a96-4429325d1773">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7b91fe1d-3d8c-4cf6-8aa6-3eccb952abfe"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="476" y="10" width="79" height="30" uuid="7e494142-ded1-4d8c-a05f-bf375b1f2ee7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e81df801-8a39-4f40-9047-9b27c1fe14eb"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_6}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="10" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="10" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="6" splitType="Stretch"/>
+	</summary>
+</jasperReport>
